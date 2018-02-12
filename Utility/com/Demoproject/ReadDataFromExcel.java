@@ -14,8 +14,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
-
 public class ReadDataFromExcel {
 
 	public static HashMap<String, LinkedHashMap<Integer, List>> loadExcelLines(String fileName) {
@@ -71,7 +69,7 @@ public class ReadDataFromExcel {
 	public static void main(String a[])
 	{
 	
-	ReadDataFromExcel rd =new ReadDataFromExcel();
+		ReadDataFromExcel rd =new ReadDataFromExcel();
 	HashMap<String, LinkedHashMap<Integer,List>> displaymap = new HashMap<String, LinkedHashMap<Integer,List>>();
 	displaymap = rd.loadExcelLines("CityDetails.xlsx");
 	System.out.println("Display excel data" +displaymap);
